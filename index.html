@@ -1,0 +1,304 @@
+<!DOCTYPE html><html><head>
+    <title>GW@AUTh</title>
+    <meta charset="UTF-8">
+    <meta name="generator" content="Silex v2.2.7">
+    <!-- leave this for stats -->
+    <script type="text/javascript" src="https://editor.silex.me/static/2.7/jquery.js" data-silex-static=""></script>
+    <script type="text/javascript" src="https://editor.silex.me/static/2.7/jquery-ui.js" data-silex-static=""></script>
+
+    <script type="text/javascript" src="https://editor.silex.me/static/2.7/pageable.js" data-silex-static=""></script>
+    <script type="text/javascript" src="https://editor.silex.me/static/2.7/front-end.js" data-silex-static=""></script>
+    <!-- Normalize -->
+    <link href="https://editor.silex.me/static/2.7/normalize.css" rel="stylesheet" data-silex-static="">
+    <!-- Silex style -->
+    <link href="https://editor.silex.me/static/2.7/front-end.css" rel="stylesheet" data-silex-static="">
+
+    <style type="text/css" class="silex-style">.title,
+.heading1,
+.heading2,
+.heading3,
+.normal {color: #666666; font-family: verdana, arial; margin: 0;}.title {font-size: 45px;}body {padding: 0;}.editable-style.full-width {width: 2000px; left: 0;}.editable-style.centered {left: 50%; width: 980px; margin-left: -490px; position: absolute;}.editable-style.right-aligned {right: 0; left: auto;}.silex-runtime .editable-style.full-width {width: 100%;}.normal,
+.heading1 {font-weight: normal; color: white;}.heading2 {font-weight: normal; color: white;}.page-content .heading1 {font-size: 36px; font-family: sans-serif; color: #3D3D3D; font-weight: normal;}.page-content .normal {color: #818181;}.nav div {color: white; font-family: sans-serif; font-size: 16px; font-weight: normal;}.nav a.page-link-active {font-weight: bold; border-bottom: 4px solid #34b399;}.editable-style.nav a:hover {text-decoration: initial;}body {padding-top: 0 !important;}</style>
+    <script type="text/javascript" class="silex-script"></script>
+
+    <style class="silex-inline-styles" type="text/css">.silex-id-1439555806958-90 {cursor: auto; background-color: rgb(255, 255, 255);}.silex-id-1484951384737-1 {top: 5px; left: 5px; background-image: url('banner-gw.png'); background-position: center right; min-width: 944px; background-size: cover; background-repeat: no-repeat; background-color: rgba(65,73,96,1); background-attachment: scroll;}.silex-id-1484951384736-0 {min-height: 216px; background-color: transparent; width: 944px; top: 20px; left: 258px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1484951384736-0 {min-height: 302px; top: 168px; left: 12px; width: 445px;}}.silex-id-1439555803858-60 {width: 947px; top: 26px; left: -1px; background-color: transparent; min-height: 104px;}.silex-id-1484951794946-5 {top: 256px; left: 5px; min-width: 945px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1484951794946-5 {top: 535px; left: 0px;}}.silex-id-1484951794946-4 {min-height: 1676px; background-color: transparent; top: 15px; left: 113px; width: 945px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1484951794946-4 {min-height: 1689px;}}.silex-id-1529591419513-1 {width: 399px; top: 563px; left: 473px; background-color: transparent; min-height: 609px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1529591419513-1 {top: 29px; left: 23px; width: 400px; min-height: 119px;}}.silex-id-1439555805723-78 {width: 400px; top: 563px; left: 18px; background-color: transparent; min-height: 178px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1439555805723-78 {top: 1247px; left: 31px; width: 400px; min-height: 119px;}}.silex-id-1529664063371-2 {width: 240px; top: 894px; left: 94px; background-color: rgb(43, 148, 126); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; min-height: 52px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1529664063371-2 {top: 1637px; left: 18px; width: 423px; min-height: 46px;}}.silex-id-1529664063371-3 {width: 144px; min-height: 28px; top: 11px; left: 51px;}.silex-id-1439555803447-56 {width: 240px; top: 960px; left: 94px; background-color: rgb(43, 148, 126); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; min-height: 52px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1439555803447-56 {top: 1637px; left: 18px; width: 423px; min-height: 46px;}}.silex-id-1529659311095-1 {width: 178px; min-height: 31px; top: 10px; left: 31px;}.silex-id-1529671357937-4 {width: 240px; top: 1032px; left: 94px; background-color: rgb(43, 148, 126); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; min-height: 52px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1529671357937-4 {top: 1637px; left: 18px; width: 423px; min-height: 46px;}}.silex-id-1529671357937-5 {width: 178px; min-height: 31px; top: 10px; left: 54px;}.silex-id-1529614773939-0 {width: 917px; min-height: 527px; top: 16px; left: 14px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1529614773939-0 {top: 45px; left: 11px; width: 433px; min-height: 250px;}}.silex-id-1529754376338-10 {width: 437px; min-height: 121px; top: 1415px; left: 20px;}.silex-id-1529753533097-8 {width: 438px; min-height: 107px; top: 1546px; left: 19px;}.silex-id-1529753960544-9 {width: 459px; min-height: 183px; top: 1473px; left: 470px;}.silex-id-1530194842155-0 {width: 455px; min-height: 150px; top: 1265px; left: 18px;}.silex-id-1529753029590-6 {width: 383px; min-height: 60px; top: 1176px; left: 18px;}.silex-id-1529753236738-7 {width: 453px; min-height: 134px; top: 1329px; left: 475px;}.silex-id-1484952760464-11 {min-height: 100px; top: 439px; left: 0px;}.silex-id-1484952760463-10 {min-height: 585px; background-color: transparent;}.silex-id-1484952775498-12 {min-height: 288px; width: 877px; top: 58px; left: 33px;}.silex-id-1484951945204-7 {top: 1951px; left: 5px; background-color: rgba(65,73,96,1); min-width: 945px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1484951945204-7 {top: 2052px; left: 0px;}}.silex-id-1484951945204-6 {min-height: 267px; background-color: transparent; top: 14px; left: 121px; width: 945px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1484951945204-6 {min-height: 676px;}}.silex-id-1439555806236-83 {width: 99px; top: 76px; left: 117px; min-height: 98px;}.silex-id-1439555806339-84 {width: 169px; top: 78px; left: 417px; min-height: 91px;}.silex-id-1439555806132-82 {width: 112px; top: 77px; left: 730px; min-height: 96px;}.silex-id-1439555805927-80 {width: 302px; top: 190px; left: 647px; background-color: transparent; min-height: 78px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1439555805927-80 {top: 363px; left: 13px; width: 302px; min-height: 152px;}}.silex-id-1439555806030-81 {width: 265px; top: 187px; left: 370px; background-color: transparent; min-height: 80px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1439555806030-81 {top: 173px; left: 158px; width: 265px; min-height: 164px;}}.silex-id-1439555806441-85 {width: 302px; top: 187px; left: 24px; background-color: transparent; min-height: 81px;}.silex-id-1439555806543-86 {width: 943px; top: 11px; left: 2px; background-color: transparent; min-height: 57px;}.silex-id-1484952021004-9 {top: 2109px; left: 6px; background-color: rgba(0,0,0,1);}.silex-id-1484952021003-8 {min-height: 80px; background-color: transparent;}.silex-id-1439555802805-52 {width: 855px; top: 11px; left: 45px; background-color: transparent; min-height: 55px;}</style>
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/json" class="silex-json-styles">[{"desktop":{"silex-id-1439555806958-90":{"cursor":"auto","background-color":"rgb(255, 255, 255)"},"silex-id-1439555806749-88":{"width":"100px","top":"1698px","left":"0px","background-color":"rgb(65, 73, 96)","min-height":"501px"},"silex-id-1439555806648-87":{"width":"980px","top":"18px","left":"1002px","background-color":"transparent","min-height":"461px"},"silex-id-1439555806543-86":{"width":"943px","top":"11px","left":"2px","background-color":"transparent","min-height":"57px"},"silex-id-1439555806441-85":{"width":"302px","top":"187px","left":"24px","background-color":"transparent","min-height":"81px"},"silex-id-1439555806339-84":{"width":"169px","top":"78px","left":"417px","min-height":"91px"},"silex-id-1439555806236-83":{"width":"99px","top":"76px","left":"117px","min-height":"98px"},"silex-id-1439555806132-82":{"width":"112px","top":"77px","left":"730px","min-height":"96px"},"silex-id-1439555806030-81":{"width":"265px","top":"187px","left":"370px","background-color":"transparent","min-height":"80px"},"silex-id-1439555805927-80":{"width":"302px","top":"190px","left":"647px","background-color":"transparent","min-height":"78px"},"silex-id-1439555805825-79":{"width":"980px","top":"468px","left":"510px","background-color":"transparent","min-height":"1193px"},"silex-id-1439555805723-78":{"width":"400px","top":"563px","left":"18px","background-color":"transparent","min-height":"178px"},"silex-id-1439555805518-76":{"width":"215px","top":"17px","left":"14px","background-color":"transparent","min-height":"20px"},"silex-id-1439555804907-70":{"width":"215px","top":"16px","left":"14px","background-color":"transparent","min-height":"28px"},"silex-id-1439555804395-65":{"width":"21px","top":"10px","left":"466px","opacity":"0.8","min-height":"19px"},"silex-id-1439555804293-64":{"width":"25px","top":"7px","left":"424px","opacity":"0.8","min-height":"25px"},"silex-id-1439555804192-63":{"width":"13.3333px","top":"9px","left":"386px","opacity":"0.8","min-height":"22px"},"silex-id-1439555803858-60":{"width":"947px","top":"26px","left":"-1px","background-color":"transparent","min-height":"104px"},"silex-id-1439555803447-56":{"width":"240px","top":"960px","left":"94px","background-color":"rgb(43, 148, 126)","border-top-left-radius":"5px","border-top-right-radius":"5px","border-bottom-right-radius":"5px","border-bottom-left-radius":"5px","min-height":"52px","border-radius":""},"silex-id-1439555802805-52":{"width":"855px","top":"11px","left":"45px","background-color":"transparent","min-height":"55px"},"silex-id-1484951384736-0":{"min-height":"216px","background-color":"transparent","width":"944px","top":"20px","left":"258px"},"silex-id-1484951384737-1":{"top":"5px","left":"5px","background-image":"url('banner-gw.png')","background-position":"center right","min-width":"944px","background-size":"cover","background-repeat":"no-repeat","background-color":"rgba(65,73,96,1)","background-attachment":"scroll"},"silex-id-1484951659147-2":{"min-height":"100px","background-color":"transparent"},"silex-id-1484951794946-4":{"min-height":"1676px","background-color":"transparent","top":"15px","left":"113px","width":"945px"},"silex-id-1484951794946-5":{"top":"256px","left":"5px","min-width":"945px"},"silex-id-1484951945204-6":{"min-height":"267px","background-color":"transparent","top":"14px","left":"121px","width":"945px"},"silex-id-1484951945204-7":{"top":"1951px","left":"5px","background-color":"rgba(65,73,96,1)","min-width":"945px"},"silex-id-1484952021003-8":{"min-height":"80px","background-color":"transparent"},"silex-id-1484952021004-9":{"top":"2109px","left":"6px","background-color":"rgba(0,0,0,1)"},"silex-id-1484952760463-10":{"min-height":"585px","background-color":"transparent"},"silex-id-1484952760464-11":{"min-height":"100px","top":"439px","left":"0px"},"silex-id-1484952775498-12":{"min-height":"288px","width":"877px","top":"58px","left":"33px"},"silex-id-1492777118376-4":{"width":"","background-color":"","min-height":"37px"},"silex-id-1529591419513-1":{"width":"399px","top":"563px","left":"473px","background-color":"transparent","min-height":"609px"},"silex-id-1529614773939-0":{"width":"917px","min-height":"527px","top":"16px","left":"14px"},"silex-id-1529659311095-1":{"width":"178px","min-height":"31px","top":"10px","left":"31px"},"silex-id-1529664063371-3":{"width":"144px","min-height":"28px","top":"11px","left":"51px"},"silex-id-1529664063371-2":{"width":"240px","top":"894px","left":"94px","background-color":"rgb(43, 148, 126)","border-top-left-radius":"5px","border-top-right-radius":"5px","border-bottom-right-radius":"5px","border-bottom-left-radius":"5px","min-height":"52px","border-radius":""},"silex-id-1529671357937-5":{"width":"178px","min-height":"31px","top":"10px","left":"54px"},"silex-id-1529671357937-4":{"width":"240px","top":"1032px","left":"94px","background-color":"rgb(43, 148, 126)","border-top-left-radius":"5px","border-top-right-radius":"5px","border-bottom-right-radius":"5px","border-bottom-left-radius":"5px","min-height":"52px","border-radius":""},"silex-id-1529753029590-6":{"width":"383px","min-height":"60px","top":"1176px","left":"18px"},"silex-id-1529753236738-7":{"width":"453px","min-height":"134px","top":"1329px","left":"475px"},"silex-id-1529753533097-8":{"width":"438px","min-height":"107px","top":"1546px","left":"19px"},"silex-id-1529753960544-9":{"width":"459px","min-height":"183px","top":"1473px","left":"470px"},"silex-id-1529754376338-10":{"width":"437px","min-height":"121px","top":"1415px","left":"20px"},"silex-id-1530194842155-0":{"width":"455px","min-height":"150px","top":"1265px","left":"18px"}},"mobile":{"silex-id-1484951794946-5":{"top":"535px","left":"0px"},"silex-id-1484951794946-4":{"min-height":"1689px"},"silex-id-1439555805723-78":{"top":"1247px","left":"31px","width":"400px","min-height":"119px"},"silex-id-1484951384736-0":{"min-height":"302px","top":"168px","left":"12px","width":"445px"},"silex-id-1439555803447-56":{"top":"1637px","left":"18px","width":"423px","min-height":"46px"},"silex-id-1484951384737-1":{"background-image":""},"silex-id-1439555805927-80":{"top":"363px","left":"13px","width":"302px","min-height":"152px"},"silex-id-1439555806030-81":{"top":"173px","left":"158px","width":"265px","min-height":"164px"},"silex-id-1484951945204-7":{"top":"2052px","left":"0px"},"silex-id-1484951945204-6":{"min-height":"676px"},"silex-id-1529591419513-1":{"top":"29px","left":"23px","width":"400px","min-height":"119px"},"silex-id-1529614773939-0":{"top":"45px","left":"11px","width":"433px","min-height":"250px"},"silex-id-1529664063371-2":{"top":"1637px","left":"18px","width":"423px","min-height":"46px"},"silex-id-1529671357937-4":{"top":"1637px","left":"18px","width":"423px","min-height":"46px"}},"componentData":{}}]</script>
+
+    
+
+
+
+
+    <meta name="website-width" content="945">
+    <style type="text/css" class="silex-style-settings">.website-width {width: 945px;}</style>
+
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.2" data-silex-viewport="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+<meta name="description" content="Gravitational Waves Group at the Aristotle University of Thessaloniki, Greece"><link href="/ce/github/get/silex1/master/favicon.png" rel="shortcut icon"><link href="http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" type="text/css" class="silex-custom-font"><!-- Silex HEAD tag do not remove -->
+    <!-- End of Silex HEAD tag do not remove --></head>
+
+<body class="silex-id-1439555806958-90 enable-mobile silex-runtime" data-silex-type="container" data-silex-id="silex-id-1439555806958-90">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="silex-pages">
+        <div data-silex-type="image" data-silex-id="silex-id-hamburger-menu" class="menu-button editable-style silex-id-hamburger-menu image-element page-page-1 paged-element prevent-draggable prevent-resizable hide-on-mobile"><img alt="open mobile menu" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAoCAYAAAC8cqlMAAAB5UlEQVR42u2ZPWvCUBSGM+UfFO3e3dLu/QN+oKj4EUXRQREEJYgoiCAu6qCogyDo7iJ21UUaKqEgCC4iiEMGB3UVgsnpTWj/wfVK2nvhGbKEPJyT996TMMzPGg6H5mKx+GgkyuWyeTQasb8OTDwef4tEIp8+n+/LYIjJZJJHQiwzm81M6OLDarWqNpsNjEYgEJCy2ewT0+/3TagighElNFAnQT6ft1ARKkJFqMgfFvF4PFpuEwFtdrcRqVarIIoirFYrIiyXSxiPx+B2u/GJBINBuF6vQHopigK1Wg2fCMdxcLlciIuoqgqNRgOfiN1uB3Qwg91uB8fjkQiHwwEmkwne1qLxS0VuKKJle71eh06nQ4Rmswk8z+MVcTqdsNlsQJZlotF7Pp8hk8ngE4lGo/qN7xG/vV4Pb0Xm8zlxkdPpBGgMx/+yJxIJKBQKRMjlcuBwOGhq/Q+RcDgMsViMCFrAuFwu/CKDwQC22y1IkkSE/X4PgiDo+xc2Ea0S9zjGa/Hb7Xbxifj9fj0K7yFSqVTwtlY6nYbpdKpPiSRYLBbQarX0PYymFhWhIlSEilCRW6GdyUqlkoVZr9dsKpXiOY6TtW+7BkNBz/7ebrcf9L+6Xq+XRYPMMyrTq5EIhUIvaAjTJb4BBNQ2yhnth0wAAAAASUVORK5CYII=" class="silex-element-content"></div><a id="page-main-page" data-silex-type="page" class="page-element">Main page</a><a class="page-element" data-silex-type="page" id="page-documentation">Documentation</a><a class="page-element" data-silex-type="page" id="page-learn-backnode">Learn Backnode</a></div>
+
+
+
+
+
+
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1484951384737-1 section-element" data-silex-id="silex-id-1484951384737-1" data-silex-href="https://www.auth.gr/en">
+
+
+
+
+        <div data-silex-type="container" class="editable-style silex-element-content website-width silex-id-1484951384736-0 silex-container-content container-element prevent-draggable" data-silex-id="silex-id-1484951384736-0">
+
+
+            <div class="editable-style container-element nav silex-id-1439555803858-60 hide-on-mobile" data-silex-type="container" data-silex-id="silex-id-1439555803858-60">
+
+
+
+                
+                
+                
+                
+            </div>
+
+            
+            
+        </div>
+        
+
+    </div>
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1484951794946-5 section-element" data-silex-id="silex-id-1484951794946-5" data-silex-href="https://www.auth.gr/en">
+        <div data-silex-type="container" class="editable-style silex-element-content website-width silex-id-1484951794946-4 silex-container-content container-element prevent-draggable" data-silex-id="silex-id-1484951794946-4">
+
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+        <div class="editable-style text-element silex-id-1529591419513-1" data-silex-type="text" data-silex-id="silex-id-1529591419513-1" style="">
+                <div class="silex-element-content normal">
+                    <h3 class="heading3"></h3>
+                    <h1 class="heading1">
+                        <font color="#000000" face="Roboto">Group members</font></h1><div><font color="#000000" face="Roboto"><br></font></div>
+                    <p class="normal"><font color="#000000" face="Roboto"><a href="http://www.astro.auth.gr/~niksterg/">Nikolaos Stergioulas</a>, Prof.</font></p><p class="normal"><font color="#000000" face="Roboto"><br></font></p><p class="normal"><font color="#000000" face="Roboto">Argiris Koumtzis, BSc student</font></p><p class="normal"><font color="#000000" face="Roboto"><br></font></p><p class="normal"><font color="#000000" face="Roboto">Argiro Sasli, BSc student</font></p><p class="normal"><font color="#000000" face="Roboto"><br></font></p><p class="normal"><font color="#000000" face="Roboto">Gkratsia Tantilian, PhD student</font></p><p class="normal"><font color="#000000" face="Roboto"><br></font></p><p class="normal"><font color="#000000" face="Roboto">Ioanna Tsina, BSc student (visiting from U. of Strathclyde)</font></p><p class="normal"><font color="#000000" face="Roboto"><br></font></p><p class="normal"><font color="#000000" face="Roboto">Maria Zioga, BSc student</font></p><p class="normal"><font color="#000000" face="Roboto"><br></font></p><p class="normal"><font color="#000000" face="Roboto">Maria Krikeli, BSc student</font></p><p class="normal"><font color="#000000" face="Roboto"><br></font></p><p class="normal"><font color="#000000" face="Roboto">Nikolaos Tryfonidis, PhD student</font></p><p class="normal"><font color="#000000" face="Roboto"><br></font></p><p class="normal"><font color="#000000" face="Roboto">Panagiotis Iosif, PhD student</font></p><p class="normal"><font color="#000000" face="Roboto"><br></font></p><p class="normal"><font color="#000000" face="Roboto">Panagiota Kolitsidou, BSc student</font></p><p class="normal"><font color="#000000" face="Roboto"><br></font></p><p class="normal"><font color="#000000" face="Roboto">Stamatis Vretinaris, MSc student</font></p><p class="normal"><font color="#000000" face="Roboto"><br></font></p><p class="normal"><font color="#000000" face="Roboto">Theorodos Soultanis, MSc student</font></p><p class="normal"><font color="#000000" face="Roboto"><br></font></p><p class="normal"><br></p><p class="normal"><font face="Roboto"><br></font></p><p class="normal"><font color="#000000"><br></font></p>
+                    <br>
+                </div>
+            </div><div class="editable-style text-element silex-id-1439555805723-78" data-silex-type="text" data-silex-id="silex-id-1439555805723-78" style="">
+                <div class="silex-element-content normal">
+                    <h3 class="heading3"></h3>
+                    <h1 class="heading1">
+                        <font color="#000000" face="Roboto">Research Interests</font></h1><div><font color="#000000" face="Roboto"><br></font></div>
+                    <p class="normal"><font color="#000000" face="Roboto">Gravitational Waves</font></p><p class="normal"><font color="#000000" face="Roboto"><br></font></p><p class="normal"><font color="#000000" face="Roboto">Numerical Relativity</font></p><p class="normal"><font color="#000000" face="Roboto"><br></font></p><p class="normal"><font color="#000000" face="Roboto">Neutron Stars</font></p><p class="normal"><font color="#000000" face="Roboto"><br></font></p><p class="normal"><font color="#000000" face="Roboto">Black Holes</font></p><p class="normal"><font color="#000000" face="Roboto"><br></font></p><p class="normal"><font color="#000000" face="Roboto">Accretion Disks</font></p><p class="normal"><font color="#000000" face="Roboto"><br></font></p><p class="normal"><font color="#000000" face="Roboto">Relativistic Astrophysics</font></p><p class="normal"><font color="#000000" face="Roboto"><br></font></p><p class="normal"><font color="#000000" face="Roboto">Magnetospheres</font></p>
+                    <br>
+                </div>
+            </div><div class="editable-style container-element silex-id-1529664063371-2" data-silex-type="container" data-silex-id="silex-id-1529664063371-2" data-silex-href="https://ui.adsabs.harvard.edu/#search/p_=0&amp;q=author%3A%22stergioulas%2C%20n%22&amp;sort=date%20desc%2C%20bibcode%20desc" style="">
+                
+            <div data-silex-type="text" class="editable-style text-element silex-id-1529664063371-3" data-silex-id="silex-id-1529664063371-3" style="" data-silex-href="https://ui.adsabs.harvard.edu/#search/p_=0&amp;q=author%3A%22stergioulas%2C%20n%22&amp;sort=date%20desc%2C%20bibcode%20desc"><div class="silex-element-content normal"><span style="color: rgb(77, 68, 255);"><font face="Roboto" size="5"><span style="color: rgb(0, 0, 255);"><span style="color: rgb(255, 255, 255);">Publications</span></span></font></span></div></div></div><div class="editable-style container-element silex-id-1439555803447-56" data-silex-type="container" data-silex-id="silex-id-1439555803447-56" data-silex-href="https://ui.adsabs.harvard.edu/#user/libraries/nrvfbV1tSrWxRMi7HrH3JA" style="">
+                
+            <div data-silex-type="text" class="editable-style silex-id-1529659311095-1 text-element" data-silex-id="silex-id-1529659311095-1" style="" data-silex-href="https://ui.adsabs.harvard.edu/#user/libraries/nrvfbV1tSrWxRMi7HrH3JA"><div class="silex-element-content normal"><span style="color: rgb(77, 68, 255);"><font face="Roboto" size="5"><span style="color: rgb(0, 0, 255);"><span style="color: rgb(255, 255, 255);">Review Articles</span></span></font></span></div></div></div><div class="editable-style container-element silex-id-1529671357937-4" data-silex-type="container" data-silex-id="silex-id-1529671357937-4" data-silex-href="http://www.astro.auth.gr/n/?p=msc_theses" style="">
+                
+            <div data-silex-type="text" class="editable-style text-element silex-id-1529671357937-5" data-silex-id="silex-id-1529671357937-5" style="" data-silex-href="http://www.astro.auth.gr/n/?p=msc_theses"><div class="silex-element-content normal"><font face="Roboto" size="5">MSc Theses</font></div></div></div><div data-silex-type="image" class="editable-style silex-id-1529614773939-0 image-element" data-silex-id="silex-id-1529614773939-0" style=""><img src="gw1-low.jpg" class="silex-element-content"></div><div data-silex-type="image" class="editable-style silex-id-1529754376338-10 image-element" data-silex-id="silex-id-1529754376338-10" style="" data-silex-href="https://hpc.grnet.gr/en/"><img src="grnet_en.png" class="silex-element-content"></div><div data-silex-type="image" class="editable-style silex-id-1529753533097-8 image-element" data-silex-id="silex-id-1529753533097-8" style="" data-silex-href="http://www.pharos.ice.csic.es/"><img src="Pharos.png" class="silex-element-content"></div><div data-silex-type="image" class="editable-style silex-id-1529753960544-9 image-element" data-silex-id="silex-id-1529753960544-9" style="" data-silex-href="https://gwverse.tecnico.ulisboa.pt/"><img src="GWverse.png" class="silex-element-content"></div><div data-silex-type="image" class="editable-style silex-id-1530194842155-0 image-element" data-silex-id="silex-id-1530194842155-0" style="" data-silex-href="https://www.auth.gr/en"><img src="auth.png" class="silex-element-content"></div><div data-silex-type="text" class="editable-style silex-id-1529753029590-6 text-element" data-silex-id="silex-id-1529753029590-6" style=""><div class="silex-element-content normal"><div><font color="#000000" size="6" face="Roboto">Research funding</font></div><div><font color="#000000" face="Roboto"><br></font></div><font color="#000000" face="Roboto">The group's activities are currently funded by:</font></div></div><div data-silex-type="image" class="editable-style silex-id-1529753236738-7 image-element" data-silex-id="silex-id-1529753236738-7" style="" data-silex-href="https://www.daad.de/de/"><img src="Daad.png" class="silex-element-content"></div></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1484952760464-11 section-element page-documentation paged-element page-learn-backnode paged-element-hidden" data-silex-id="silex-id-1484952760464-11">
+        <div data-silex-type="container" class="editable-style silex-element-content website-width silex-id-1484952760463-10 silex-container-content container-element prevent-draggable" data-silex-id="silex-id-1484952760463-10">
+            <div data-silex-type="text" class="editable-style silex-id-1484952775498-12 text-element" data-silex-id="silex-id-1484952775498-12">
+                <div class="silex-element-content normal">
+                    <font color="#000000">Waiting for your content here...</font>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1484951945204-7 section-element" data-silex-id="silex-id-1484951945204-7">
+        <div data-silex-type="container" class="editable-style silex-element-content website-width silex-id-1484951945204-6 silex-container-content container-element prevent-draggable" data-silex-id="silex-id-1484951945204-6">
+            
+            
+            
+            
+
+            
+            
+            
+        <div class="editable-style image-element silex-id-1439555806236-83" data-silex-type="image" data-silex-id="silex-id-1439555806236-83" style="" data-silex-href="https://github.com/niksterg">
+            <img src="picto1.png" class="silex-element-content"></div><div class="editable-style image-element silex-id-1439555806339-84" data-silex-type="image" data-silex-id="silex-id-1439555806339-84" style="">
+            <img src="picto2.png" class="silex-element-content"></div><div class="editable-style image-element silex-id-1439555806132-82" data-silex-type="image" data-silex-id="silex-id-1439555806132-82" style="" data-silex-href="https://ui.adsabs.harvard.edu/#search/p_=1&amp;q=author%3A%22stergioulas%2C%20n%22&amp;sort=date%20desc%2C%20bibcode%20desc">
+            <img src="picto3.png" class="silex-element-content"></div><div class="editable-style text-element silex-id-1439555805927-80" data-silex-type="text" data-silex-id="silex-id-1439555805927-80" style="" data-silex-href="https://ui.adsabs.harvard.edu/#search/p_=1&amp;q=author%3A%22stergioulas%2C%20n%22&amp;sort=date%20desc%2C%20bibcode%20desc">
+                <div class="silex-element-content normal">
+                    <h2 style="text-align: center;" class="heading2">Publications<br></h2>
+                    <p style="text-align: center;" class="normal">Publications by group members</p>
+                </div>
+            </div><div class="editable-style text-element silex-id-1439555806030-81" data-silex-type="text" data-silex-id="silex-id-1439555806030-81" style="">
+                <div class="silex-element-content normal">
+                    <h2 style="text-align: center;" class="heading2">Group Members<br></h2>
+                    <p style="text-align: center;" class="normal">Individual pages of group members</p>
+                </div>
+            </div><div class="editable-style text-element silex-id-1439555806441-85" data-silex-type="text" data-silex-id="silex-id-1439555806441-85" style="" data-silex-href="https://github.com/niksterg">
+                <div class="silex-element-content normal">
+                    <h2 style="text-align: center;" class="heading2">Codes</h2>
+                    <p style="text-align: center;" class="normal">Open source codes by group members</p>
+                </div>
+            </div><div class="editable-style text-element silex-id-1439555806543-86" data-silex-type="text" data-silex-id="silex-id-1439555806543-86" style="">
+                <div class="silex-element-content normal">
+                    <h1 style="text-align: center;" class="heading1">Useful Links</h1>
+                </div>
+            </div></div>
+    </div>
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1484952021004-9 section-element" data-silex-id="silex-id-1484952021004-9">
+        <div data-silex-type="container" class="editable-style silex-element-content website-width silex-id-1484952021003-8 silex-container-content container-element prevent-draggable" data-silex-id="silex-id-1484952021003-8">
+            
+        <div data-silex-type="text" class="editable-style text-element silex-id-1439555802805-52" data-silex-id="silex-id-1439555802805-52" style="">
+                <div class="silex-element-content normal">
+                    <p class="normal"></p>
+                    <div style="text-align: center;"><font size="1"><span style="color: rgb(255, 255, 255);">About this website</span> </font></div>
+                    <font color="#ffffff"><font size="1"> </font><div style="text-align: center;"><font size="1"><a href="//www.silex.me/">powered by Silex v2</a> - <a href="https://pages.github.com/">hosted on github pages</a></font></div><div style="text-align: center;"><font size="1">Banner designed by Markos Simichanidis</font></div> </font>
+                    <p class="normal"></p>
+                </div>
+            </div></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
