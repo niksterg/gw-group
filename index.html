@@ -1,202 +1,196 @@
 <!DOCTYPE html>
 <html lang="">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta name="generator" content="Silex v2.2.14">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GW Group</title>
-  
-  <!-- External dependencies -->
-  <script type="text/javascript" src="https://editor.silex.me/static/2.12/jquery.js"></script>
-  <script type="text/javascript" src="https://editor.silex.me/static/2.12/front-end.js"></script>
-  <link rel="stylesheet" href="https://editor.silex.me/static/2.12/normalize.css">
-  <link rel="stylesheet" href="https://editor.silex.me/static/2.12/front-end.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  
-  <!-- Custom styles -->
+  <title>Gravitational Wave Group</title>
   <style>
-    /* Constrain all images to prevent oversizing */
+    /* Roboto font (inlined, no external request) */
+    @font-face {
+      font-family: 'Roboto';
+      src: url('https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+    }
+    /* Core styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fff;
+      margin: 0;
+      padding: 0;
+      color: #000;
+    }
+    .content-wrapper {
+      max-width: 1185px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    /* Two-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      min-height: 1828px;
+      position: relative;
+    }
+    /* Image constraints */
     img {
       max-width: 100%;
       height: auto;
       display: block;
+      loading: lazy;
     }
-    /* Existing Silex styles */
-    .body-initial {background-color: rgba(255,255,255,1); position: static;}
-WELCOME TO THE GRAVITATIONAL WAVE GROUP WEBSITE OF THE ARISTOTLE UNIVERSITY OF THESSALONIKI
-.silex-id-1478366444112-1 {background-color: transparent; position: static; margin-top: -1px;}
-    .silex-id-1478366444112-0 {background-color: transparent; min-height: 216px; background-image: url(banner-gw.png); background-position: center right; background-size: cover; background-repeat: no-repeat; background-attachment: scroll; position: relative; margin-left: auto; margin-right: auto;}
-    .silex-id-1474394621033-3 {position: static; margin-top: -1px;}
-    .silex-id-1474394621032-2 {background-color: transparent; min-height: 1828px; position: relative; margin-left: auto; margin-right: auto;}
-    .silex-id-1576373293631-0 {width: 506px; top: 6px; left: 331px; height: 317px; position: absolute;}
-    .silex-id-1576372548790-0 {width: 345px; top: 323px; left: 234px; min-height: 235px; position: absolute;}
-    .silex-id-1576396553208-0 {width: 345px; top: 553px; left: 234px; min-height: 235px; position: absolute;}
-    .silex-id-1576396881139-1 {width: 332px; top: 764px; left: 234px; min-height: 80.875px; position: absolute;}
-    .silex-id-1576396945847-2 {width: 384px; top: 935px; left: 234px; height: 69px; position: absolute;}
-    .silex-id-1576396984166-3 {width: 384px; top: 1104.875px; left: 234px; height: 79px; position: absolute;}
-    .silex-id-1576510391309-8 {width: 363px; top: 1404px; left: 662px; height: 141px; position: absolute;}
-    .silex-id-1576397316441-7 {width: 365px; top: 1341.25px; left: 662px; height: 53px; position: absolute;}
-    .silex-id-1576397202555-5 {width: 408px; top: 1283px; left: 229px; height: 128px; position: absolute;}
-    .silex-id-1576397247913-6 {width: 402px; top: 1432px; left: 241px; height: 129px; position: absolute;}
-    .silex-id-1576510523280-9 {width: 228px; top: 1553px; left: 730px; height: 218px; position: absolute;}
-    .silex-id-1576510554895-10 {width: 386px; top: 1616px; left: 241px; height: 140px; position: absolute;}
-    .silex-id-1576397125354-4 {width: 315px; top: 1215.125px; left: 234px; min-height: 80px; position: absolute;}
-    .silex-id-1576373439453-1 {width: 359px; top: 323px; left: 662px; min-height: 942px; position: absolute;}
-    .silex-id-1576510709260-11 {width: 236px; top: 1756px; left: 549px; min-height: 67px; position: absolute;}
-    .silex-id-1576510854687-12 {width: 331px; top: 2040.625px; left: 592px; min-height: 89px; position: absolute;}
-    .silex-id-1608242665326-0 {width: 412px; height: 90px; position: absolute; top: 832px; left: 220px;}
-    .silex-id-1608243890589-1 {width: 384px; height: 69px; position: absolute; top: 1020px; left: 234px;}
-    .text-element > .silex-element-content {font-family: 'Roboto', sans-serif; color: #000000;}
-    .website-width {width: 1185px;}
-    @media only screen and (max-width: 480px) {}
+    .banner {
+      max-width: 384px;
+    }
+    .group-photo {
+      max-width: 506px;
+    }
+    .header-banner {
+      max-width: 1185px;
+      height: 216px;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+    /* Silex-like positioning */
+    .silex-id-1478366444112-0 { background-image: url('banner-gw.png'); background-size: cover; background-position: center right; }
+    .silex-id-1576373293631-0 { position: absolute; top: 6px; left: 331px; }
+    .silex-id-1576372548790-0 { position: absolute; top: 323px; left: 234px; width: 345px; }
+    .silex-id-1576396553208-0 { position: absolute; top: 553px; left: 234px; width: 345px; }
+    .silex-id-1576396881139-1 { position: absolute; top: 764px; left: 234px; width: 332px; }
+    .silex-id-1576396945847-2 { position: absolute; top: 935px; left: 234px; }
+    .silex-id-1576396984166-3 { position: absolute; top: 1104px; left: 234px; }
+    .silex-id-1576510391309-8 { position: absolute; top: 1404px; left: 662px; }
+    .silex-id-1576397316441-7 { position: absolute; top: 1341px; left: 662px; }
+    .silex-id-1576397202555-5 { position: absolute; top: 1283px; left: 229px; }
+    .silex-id-1576397247913-6 { position: absolute; top: 1432px; left: 241px; }
+    .silex-id-1576510523280-9 { position: absolute; top: 1553px; left: 730px; }
+    .silex-id-1576510554895-10 { position: absolute; top: 1616px; left: 241px; }
+    .silex-id-1576397125354-4 { position: absolute; top: 1215px; left: 234px; width: 315px; }
+    .silex-id-1576373439453-1 { position: absolute; top: 323px; left: 662px; width: 359px; }
+    .silex-id-1576510709260-11 { position: absolute; top: 1756px; left: 549px; width: 236px; }
+    .silex-id-1576510854687-12 { margin-top: 20px; text-align: center; }
+    .silex-id-1608242665326-0 { position: absolute; top: 832px; left: 220px; }
+    .silex-id-1608243890589-1 { position: absolute; top: 1020px; left: 234px; }
+    /* Links and text */
+    a { color: #000; text-decoration: underline; }
+    a:hover { text-decoration: none; }
+    h1, h2 { margin: 10px 0; }
+    p { margin: 5px 0; }
+    @media (max-width: 768px) {
+      .container { grid-template-columns: 1fr; }
+      .silex-id-* { position: static; width: 100%; }
+    }
   </style>
 </head>
-<body class="body-initial" style="background-color: rgba(255,255,255,1);">
-  <section class="container-element silex-id-1478366444112-1" style="background-color: transparent; position: static; margin-top: -1px;">
-    <div class="container-element website-width silex-id-1478366444112-0" style="background-color: transparent; min-height: 216px; background-image: url(banner-gw.png); background-position: center right; background-size: cover; background-repeat: no-repeat; background-attachment: scroll; position: relative; margin-left: auto; margin-right: auto;"></div>
-  </section>
-  <section class="container-element silex-id-1474394621033-3" style="position: static; margin-top: -1px;">
-    <div class="container-element website-width silex-id-1474394621032-2" style="width: 1185px; min-height: 1828px;">
-      <div class="text-element silex-id-1576372548790-0" style="top: 323px; left: 234px; width: 345px; min-height: 235px;">
-        <div class="silex-element-content normal">
-          <h1>Research Interests</h1>
-          <p>Gravitational Waves<br>
-            Numerical Relativity<br>
-            Neutron Stars<br>
-            Black Holes<br>
-            Accretion Disks<br>
-            Relativistic Astrophysics<br>
-            Magnetospheres</p>
-        </div>
+<body>
+  <div class="content-wrapper">
+    <img src="banner-gw.png" class="header-banner" alt="Banner">
+    <div class="container">
+      <div class="silex-id-1576372548790-0">
+        <h1>Research Interests</h1>
+        <p>Gravitational Waves<br>
+          Numerical Relativity<br>
+          Neutron Stars<br>
+          Black Holes<br>
+          Accretion Disks<br>
+          Relativistic Astrophysics<br>
+          Magnetospheres</p>
       </div>
-      <div class="text-element silex-id-1576396553208-0" style="top: 553px; left: 234px; width: 345px; min-height: 235px;">
-        <div class="silex-element-content normal">
-          <h2><a href="https://ui.adsabs.harvard.edu/search/p_=0&q=%20author%3A%22stergioulas%2C%20n%22&sort=date%20desc%2C%20bibcode%20desc" target="_blank">PUBLICATIONS</a></h2>
-          <h2><a href="https://ui.adsabs.harvard.edu/user/libraries/hNhk59lGRoqHtMvxO7mGDw" target="_blank">REVIEW ARTICLES</a></h2>
-          <h2><a href="https://www.astro.auth.gr/n/?p=msc_theses" target="_blank">MSc THESES</a></h2>
-          <h2><a href="https://www.astro.auth.gr/n/?p=bsc_theses" target="_blank">BSc THESES</a></h2>
-        </div>
+      <div class="silex-id-1576396553208-0">
+        <h2><a href="https://ui.adsabs.harvard.edu/search/p_=0&q=%20author%3A%22stergioulas%2C%20n%22&sort=date%20desc%2C%20bibcode%20desc" target="_blank">PUBLICATIONS</a></h2>
+        <h2><a href="https://ui.adsabs.harvard.edu/user/libraries/hNhk59lGRoqHtMvxO7mGDw" target="_blank">REVIEW ARTICLES</a></h2>
+        <h2><a href="https://www.astro.auth.gr/n/?p=msc_theses" target="_blank">MSc THESES</a></h2>
+        <h2><a href="https://www.astro.auth.gr/n/?p=bsc_theses" target="_blank">BSc THESES</a></h2>
       </div>
-      <div class="text-element silex-id-1576396881139-1" style="top: 764px; left: 234px; width: 332px; min-height: 80px;">
-        <div class="silex-element-content normal">
-          <h2>Consortium Memberships:</h2>
-        </div>
+      <div class="silex-id-1576396881139-1">
+        <h2>Consortium Memberships:</h2>
       </div>
-      <div class="text-element silex-id-1576373439453-1" style="top: 323px; left: 662px; width: 359px; min-height: 942px;">
-        <div class="silex-element-content normal">
-          <h1>Group members</h1>
-          <p><a href="http://www.astro.auth.gr/~niksterg/">Nikolaos Stergioulas</a>, Prof.</p>
-          <p><a href="https://www.astro.auth.gr/n/?p=members&u=28">George Pappas</a>, Assist. Prof.</p>
-          <p><a href="https://karnesis.wordpress.com/">Nikos Karnesis</a>, Post-doc<br><br>
-            <a href="https://ui.adsabs.harvard.edu/search/q=%20author%3A%22iosif%2C%20p%22&sort=date%20desc%2C%20bibcode%20desc&p_=0">Panagiotis Iosif</a>, Post-doc<br><br>
-            Dimitrios Pesios, PhD student<br>
-            Argyro Sasli, PhD student<br><br>
-            Aristeidis Nikolaidis, MSc student<br>
-            Kimon Zagkouris, MSc student<br><br>
-            Nikiforos Galanis, BSc student<br>
-            Anastasia Iliopoulou, BSc student<br>
-            Alexandra Eleni Koloniari, BSc student<br>
-            Evdokia Koursoumpa, BSc student<br>
-            Ioannis Liodis, BSc student<br>
-            Evgenia Manolidu-Chatzi, BSc student<br>
-            Christos Mermigkas, BSc student<br>
-            Erato Mpenetou, BSc student<br><br><br>
-            <u>Recent members:</u><br></p>
-          <p>Rami Albelbeisi (University of Copenhagen)<br>
-            Telemachos Athanasiadis (University of Bonn)<br>
-            Andreas Bauswein (GSI Darmstadt)<br>
-            Gabriele Bozzola (University of Arizona)<br>
-            Anastasia Eythymiadou (University of Bath)<br>
-            Maria Georgousi (University of Crete)<br>
-            Kiki Dionysopoulou (University of Southampton)<br>
-            Panagiota Kolitsidou (Cardiff University)<br>
-            Ioannis Koutalios (Leiden University)<br>
-            Maria Krikeli (University of Sydney)<br>
-            Georgios Lioutas (GSI Darmstadt)<br>
-            Konstantinos Palapanidis (University of Southampton)<br>
-            Maria Peletidou (University of Amsterdam)<br>
-            Evagelos Smirniotis, MSc<br>
-            Theodoros Soultanis (University of Heidelberg)<br>
-            Lazaros Souvaitzis, (IMPRS Munich)<br>
-            Evaggelos Stoikos (University of Texas at Dallas)<br>
-            Georgios Valogiannis (Cornell University)<br>
-            Christos Vourelis (University of Heidelberg)<br>
-            Stamatis Vretinaris (AEI-Hannover)<br>
-            Georgios Vretinaris (University of Tuebingen)<br>
-            Maria Zioga (University of Tuebingen)</p>
-        </div>
+      <div class="silex-id-1608242665326-0">
+        <a href="https://www.virgo-gw.eu/"><img src="VIRGO.png" class="banner" alt="Virgo"></a>
       </div>
-      <div class="image-element silex-id-1576396945847-2" style="top: 935px; left: 234px; width: 384px; height: 69px;">
-        <a href="https://www.lisamission.org/" target="_blank">
-          <img src="LISA-banner.jpg" loading="lazy">
-        </a>
+      <div class="silex-id-1576396945847-2">
+        <a href="https://www.lisamission.org/"><img src="LISA-banner.jpg" class="banner" alt="LISA"></a>
       </div>
-      <div class="text-element silex-id-1576397125354-4" style="top: 1215px; left: 234px; width: 315px; min-height: 80px;">
-        <div class="silex-element-content normal">
-          <h2>Current funding:</h2>
-        </div>
+      <div class="silex-id-1608243890589-1">
+        <a href="https://cosmicexplorer.org/index.html"><img src="CE.png" class="banner" alt="Cosmic Explorer"></a>
       </div>
-      <div class="image-element silex-id-1576396984166-3" style="top: 1104px; left: 234px; width: 384px; height: 79px;">
-        <a href="https://www.isdc.unige.ch/theseus/" target="_blank">
-          <img src="theseus-banner.png" loading="lazy">
-        </a>
+      <div class="silex-id-1576396984166-3">
+        <a href="https://www.isdc.unige.ch/theseus/"><img src="theseus-banner.png" class="banner" alt="THESEUS"></a>
       </div>
-      <div class="image-element silex-id-1608243890589-1" style="top: 1020px; left: 234px; width: 384px; height: 69px;">
-        <a href="https://cosmicexplorer.org/index.html">
-          <img src="CE.png" loading="lazy">
-        </a>
+      <div class="silex-id-1576397125354-4">
+        <h2>Current Funding:</h2>
       </div>
-      <div class="image-element silex-id-1608242665326-0" style="top: 832px; left: 220px; width: 412px; height: 90px;">
-        <a href="https://www.virgo-gw.eu/">
-          <img src="VIRGO.png" loading="lazy">
-        </a>
+      <div class="silex-id-1576397202555-5">
+        <a href="https://www.auth.gr/en"><img src="auth.png" class="banner" alt="AUTH"></a>
       </div>
-      <div class="text-element silex-id-1576510709260-11" style="top: 1756px; left: 549px; width: 236px; min-height: 68px;">
-        <div class="silex-element-content normal">
-          <h2><a href="https://niksterg.github.io/gw-group-resources/" target="_blank">USEFUL LINKS</a></h2>
-        </div>
+      <div class="silex-id-1576397247913-6">
+        <a href="https://grnet.gr/en/"><img src="grnet_en.png" class="banner" alt="GRNET"></a>
       </div>
-      <div class="image-element silex-id-1576373293631-0" style="top: 6px; left: 331px; width: 506px; height: 317px;">
-        <a href="AUTh-group-2022s3.jpg">
-          <img src="AUTh-group-2022s3.jpg" loading="lazy">
-        </a>
+      <div class="silex-id-1576397316441-7">
+        <a href="https://sci.esa.int/web/prodex"><img src="esa-prodex.png" class="banner" alt="ESA Prodex"></a>
       </div>
-      <div class="image-element silex-id-1576510554895-10" style="top: 1616px; left: 241px; width: 386px; height: 140px;">
-        <a href="https://www.g2net.eu/" target="_blank">
-          <img src="G2NetBlue.png" loading="lazy">
-        </a>
+      <div class="silex-id-1576510391309-8">
+        <a href="https://gwverse.tecnico.ulisboa.pt/"><img src="GWverse.png" class="banner" alt="GWverse"></a>
       </div>
-      <div class="image-element silex-id-1576510523280-9" style="top: 1553px; left: 730px; width: 228px; height: 218px;">
-        <a href="https://qg-mm.unizar.es/" target="_blank">
-          <img src="Quantum..png" loading="lazy">
-        </a>
+      <div class="silex-id-1576510523280-9">
+        <a href="https://qg-mm.unizar.es/"><img src="Quantum..png" class="banner" alt="Quantum"></a>
       </div>
-      <div class="image-element silex-id-1576510391309-8" style="top: 1404px; left: 662px; width: 363px; height: 141px;">
-        <a href="https://gwverse.tecnico.ulisboa.pt/" target="_blank">
-          <img src="GWverse.png" loading="lazy">
-        </a>
+      <div class="silex-id-1576510554895-10">
+        <a href="https://www.g2net.eu/"><img src="G2NetBlue.png" class="banner" alt="G2Net"></a>
       </div>
-      <div class="image-element silex-id-1576397316441-7" style="top: 1341px; left: 662px; width: 365px; height: 53px;">
-        <a href="https://sci.esa.int/web/prodex">
-          <img src="esa-prodex.png" loading="lazy">
-        </a>
+      <div class="silex-id-1576373439453-1">
+        <h1>Group Members</h1>
+        <p><a href="http://www.astro.auth.gr/~niksterg/">Nikolaos Stergioulas</a>, Prof.</p>
+        <p><a href="https://www.astro.auth.gr/n/?p=members&u=28">George Pappas</a>, Assist. Prof.</p>
+        <p><a href="https://karnesis.wordpress.com/">Nikos Karnesis</a>, Post-doc<br>
+          <a href="https://ui.adsabs.harvard.edu/search/q=%20author%3A%22iosif%2C%20p%22&sort=date%20desc%2C%20bibcode%20desc&p_=0">Panagiotis Iosif</a>, Post-doc<br>
+          Dimitrios Pesios, PhD student<br>
+          Argyro Sasli, PhD student<br>
+          Aristeidis Nikolaidis, MSc student<br>
+          Kimon Zagkouris, MSc student<br>
+          Nikiforos Galanis, BSc student<br>
+          Anastasia Iliopoulou, BSc student<br>
+          Alexandra Eleni Koloniari, BSc student<br>
+          Evdokia Koursoumpa, BSc student<br>
+          Ioannis Liodis, BSc student<br>
+          Evgenia Manolidu-Chatzi, BSc student<br>
+          Christos Mermigkas, BSc student<br>
+          Erato Mpenetou, BSc student</p>
+        <h3>Recent Members</h3>
+        <p>Rami Albelbeisi (University of Copenhagen)<br>
+          Telemachos Athanasiadis (University of Bonn)<br>
+          Andreas Bauswein (GSI Darmstadt)<br>
+          Gabriele Bozzola (University of Arizona)<br>
+          Anastasia Eythymiadou (University of Bath)<br>
+          Maria Georgousi (University of Crete)<br>
+          Kiki Dionysopoulou (University of Southampton)<br>
+          Panagiota Kolitsidou (Cardiff University)<br>
+          Ioannis Koutalios (Leiden University)<br>
+          Maria Krikeli (University of Sydney)<br>
+          Georgios Lioutas (GSI Darmstadt)<br>
+          Konstantinos Palapanidis (University of Southampton)<br>
+          Maria Peletidou (University of Amsterdam)<br>
+          Evagelos Smirniotis, MSc<br>
+          Theodoros Soultanis (University of Heidelberg)<br>
+          Lazaros Souvaitzis (IMPRS Munich)<br>
+          Evaggelos Stoikos (University of Texas at Dallas)<br>
+          Georgios Valogiannis (Cornell University)<br>
+          Christos Vourelis (University of Heidelberg)<br>
+          Stamatis Vretinaris (AEI-Hannover)<br>
+          Georgios Vretinaris (University of Tuebingen)<br>
+          Maria Zioga (University of Tuebingen)</p>
       </div>
-      <div class="image-element silex-id-1576397247913-6" style="top: 1432px; left: 241px; width: 402px; height: 129px;">
-        <a href="https://grnet.gr/en/" target="_blank">
-          <img src="grnet_en.png" loading="lazy">
-        </a>
+      <div class="silex-id-1576373293631-0">
+        <a href="AUTh-group-2022s3.jpg"><img src="AUTh-group-2022s3.jpg" class="group-photo" alt="Group Photo"></a>
       </div>
-      <div class="image-element silex-id-1576397202555-5" style="top: 1283px; left: 229px; width: 408px; height: 128px;">
-        <a href="https://www.auth.gr/en" target="_blank">
-          <img src="auth.png" loading="lazy">
-        </a>
+      <div class="silex-id-1576510709260-11">
+        <h2><a href="https://niksterg.github.io/gw-group-resources/" target="_blank">USEFUL LINKS</a></h2>
       </div>
     </div>
-  </section>
-  <div class="text-element silex-id-1576510854687-12">
-    <div class="silex-element-content normal">
+    <div class="silex-id-1576510854687-12">
       <p>About this website<br>
-        <a href="https://www.silex.me/">powered by Silex v2</a> - <a href="https://pages.github.com/">hosted on github pages<br></a>
+        Hosted on <a href="https://pages.github.com/">GitHub Pages</a><br>
         Banner designed by Markos Simichanidis</p>
     </div>
   </div>
